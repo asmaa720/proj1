@@ -1,0 +1,555 @@
+
+.header{
+    width: 100%;
+    height: 45;
+    background-color: grey;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.img1{
+    /* margin-right: 20; */
+    float: left;
+}
+.list{
+    float: right;
+    list-style: none;
+}
+.list li{
+    
+    list-style: none;
+    display: inline-block;
+    margin-left: 25;
+    color: rgb(237, 47, 47);
+    font-size: 25;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.container1{
+    width: 80%;
+    margin: auto;
+     height: 700; 
+}
+.team-title{
+    text-align: center;
+    margin-top: 100;
+    font-size: 40;
+}
+.team-line{
+    width: 70;
+    height: 4;
+    background-color: blue;
+    margin: auto;
+    margin-top: 30;
+}
+.team-content{
+    margin-top: 30;
+}
+/* 
+.team-info-title{
+    text-align: center;
+}
+.team-info-prg{
+    text-align: center;
+}  */
+.team-iteam{
+    float: left;
+    background-color: rgb(224, 220, 220);
+    width: 30%;
+    padding: 14px 19px ;
+    text-align:center ;
+    margin-top: 100;
+    height: 350;
+    position: relative;
+
+}
+.dd{
+    margin: 0% 5%;
+    margin-top: 100;
+}
+.team-img {
+    background-color:red;
+    /* width: 90%; */
+    /* margin: auto; */
+    position: relative; 
+}
+.team-img img{
+     width: 100%; 
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+
+}
+.team-iteam:hover .team-overlay{
+    visibility: visible;
+    opacity: 0.9;
+    transition: 1s;
+}
+.team-overlay a{
+    display: block;
+    width: 40;
+    height: 40;
+    background-color: rgb(41, 159, 255);
+    color: white;
+    font-size: 20;
+    margin-left: auto;
+}
+.team-overlay a i{
+    line-height: 40px;
+}
+
+.team-iteam::after{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:black;
+    opacity: 0;
+    content: "";
+    transition: 2s;
+}
+.team-iteam:hover::after
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+
+}
+//////////////////
+
+
+.container2{
+    width: 100%;
+    background-color:red;
+    height: 900;
+}
+.choose-iteam{
+    background-color: rgb(249, 249, 249);
+    width: 100%;
+}
+.our-choose{
+    width: 50%;
+    height: 400;
+    background-color: rgb(244, 240, 240);
+    float: left;
+}
+.title-choose{
+    font-size: 40;
+    margin-left:40 ;
+}
+.choose-line{
+    height: 5;
+    width: 70;
+    background-color: blue;
+    margin-top: 15;
+    margin-left: 40;
+}
+.choose-prg{
+    margin-top: 40;
+    margin-left: 40;
+}
+.choose-sp{
+    line-height: 3;
+    margin-left: 10;
+}
+ .img-choose{
+    width: 50%;
+    background-color:rgb(244, 240, 240);
+    float: left;
+    height: 400;
+ }
+ .choose-img{
+    margin: 0% 10%;
+ }
+ .choose-dote li{
+
+    background-color: grey;
+    height: 10;
+    width: 10;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10;
+    
+ }
+.choose-dote{
+    margin-left: 350;
+}
+.choose-dote li:hover {
+    background-color: rgb(0, 136, 255);
+}
+
+ .offer-title{
+    
+    text-align: center;
+
+    font-size: 40;
+ }
+ .our-choose i{
+    font-size: 18;
+    color: rgb(50, 139, 240);
+    margin-left: 30;
+ }
+ .offer-line{
+    
+    width: 70;
+    height: 4;
+    background-color: blue;
+    margin: auto;
+ }
+ .container3{
+    width: 80%;
+    margin: auto;
+    height: 800;
+ }
+ .offer-content1{
+    
+    
+ }
+ .iteam-content1{
+    width: 30%;
+    float: left;
+    border: 1px solid black;
+    height: 200;
+    margin-top: 50;
+    position: relative;
+}
+.bb{
+    margin: 0% 5%;
+    margin-top: 50;
+} 
+
+.iteam-content1 ::after{
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 2s;
+    content: "";
+}
+.iteam-content1:hover ::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+
+ 
+.iteam-content2{
+   width: 30%;
+   float: left;
+   border: 1px solid black;
+   margin-top: 50;
+   height: 200;
+   position: relative;
+   
+}
+.ss{
+   margin: 0% 5%;
+   margin-top: 50;
+}  
+.offer-content1 i{
+    position: absolute;
+    margin-top: 20;
+    margin-left: 10;
+    font-size: 30;
+    color:#6195ff;
+}
+
+.offer-content2 i{
+    position: absolute;
+    margin-top: 20;
+    margin-left: 10;
+    font-size: 30;
+    color:#6195ff;
+}
+h2{
+    margin-top: 20;
+    margin-left: 60;
+}
+p{
+    margin-top: 20;
+    margin-left: 60;
+    font-size: 18;
+}
+
+
+.iteam-content2 ::after{
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 2s;
+    content: "";
+}
+.iteam-content2:hover ::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+
+
+
+
+/* 
+.big-ground{
+    background-color:darkgrey;
+    width: 100%;
+} */
+
+.container4{
+    
+    width: 80%;
+    margin: auto;
+    height: 900;
+}
+
+.feature-title{
+    
+    text-align: center;
+
+    font-size: 40;
+}
+
+.feature-line{
+   
+    width: 70;
+    height: 4;
+    background-color: blue;
+    margin: auto; 
+}
+.feature-content1{
+    width: 80%;
+    margin: auto;
+}
+.featureiteam-content1{
+    float: left;
+    background-color:cadetblue;
+    width: 30%;
+    margin-top: 50;
+     
+    
+}
+.mm{
+    margin: 0% 5%;
+    margin-top: 50;
+}
+
+.feature-content2{
+    width: 80%;
+    margin: auto;
+}
+.featureiteam-content2{
+    float: left;
+    background-color:cadetblue;
+    width: 30%;
+    margin-top: 50;
+    height: 300;
+
+    
+}
+.nn{
+    /* margin: 0% 5%; */
+    margin-top: 50;
+    width: 30%;
+}
+
+
+
+
+
+
+
+.container5{
+    
+    width: 80%;
+    margin: auto;
+    height:600;
+}
+.news-title{
+    margin-top: 100;
+    text-align: center;
+
+    font-size: 40;
+}
+.news-line{
+    margin-top: 300;
+    width: 70;
+    height: 4;
+    background-color: blue;
+    margin: auto; 
+}
+.news-content{
+    /* width: 80%; */
+    margin: auto;
+    margin-top: 100;
+    background-color: grey;
+    position: relative;
+}
+.newsiteam-content{
+  width: 30%;
+  float: left;
+  background-color:;
+  height: 500;
+  position: relative;
+}
+.pp{
+    margin: 0% 5%;
+}
+.icons{
+    float: left;
+    margin: auto;
+    width: 30%;
+}
+.news-icon{
+    width: 100%;
+
+    margin-top: 20;
+}
+.ss{
+    margin-left: 25;
+
+}
+.icons i{
+    color: rgb(0, 76, 255);
+}
+.news-info{
+    
+    width: 100%;
+    margin-top: 20;
+}
+.newsiteam-title{
+    margin-right: 10;
+    margin-top: 20;
+}
+
+.newsiteam-content::after{
+
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:rgb(0, 200, 255);
+    opacity: 0;
+    content: "";
+    transition: 2s;
+}
+
+.newsiteam-content:hover::after{
+
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+
+}
+
+
+
+
+
+
+.container6{
+    width: 100%;
+    margin: auto;
+    /* height: 300; */
+}
+.full{
+    width: 100%;
+    /* height: 500; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../imges/WhatsApp\ Image\ 2023-10-05\ at\ 14.13.33_21304c50.jpg);
+    background-attachment: fixed;
+    overflow: auto;
+    
+    
+}
+.div1{
+    width: 20%;
+    /* background-color: blueviolet; */
+    float: left;
+    margin-left: 5%;
+    position: relative;
+    margin-top: 100;
+    height: 300;
+}
+.div1 i{
+    position: absolute;
+    margin-left: 60;
+    color: rgb(0, 119, 255);
+}
+.div1 h2{
+    margin-top: 40;
+    color: white;
+    font-size: 40;
+}
+.div1 p{
+    color: white;
+}
+
+
+
+
+
+
+
+.container7{
+    width: 100%;
+    margin: auto;
+}
+.div7{
+width: 100%;
+/* height: 300; */
+background-color:rgb(76, 73, 73);
+ }   
+.last-img{
+    width: 100;
+    height: 200;
+    margin: auto;
+
+
+}
+.last-info{
+    width: 700;
+    height: 200;
+    /* background-color:violet; */
+    text-align: center;
+    margin: auto;
+    margin-top: 40;
+}
+.last-info i{
+    
+    margin-left: 30;
+    font-size: 30;
+    color: rgb(0, 140, 255);
+    margin-top: 50;
+}
+.last-img img{
+    margin-top: 100;
+}
+.last-info P{
+    color: rgb(181, 172, 172);
+    font-size: 15;
+    margin-top: 50;
+}
